@@ -4,6 +4,7 @@ import ContactFooter from './components/ContactFooter';
 import ScrollToTop from './components/ScrollToTop';
 import ErrorBoundary from './components/ErrorBoundary';
 import NotFound from './components/NotFound';
+import WhatsAppFloat from './components/WhatsAppFloat';
 
 // Pages
 import Home from './pages/Home';
@@ -35,6 +36,7 @@ function App() {
           </Routes>
         </main>
         <ContactFooter />
+        <WhatsAppFloat />
       </div>
     </Router>
   </ErrorBoundary>

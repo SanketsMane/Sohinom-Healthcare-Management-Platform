@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { ArrowRight, CheckCircle, Users, Award, Shield } from 'lucide-react';
+import { ArrowRight, CheckCircle, Users, Award, Shield, MessageCircle } from 'lucide-react';
 
 const Hero = () => {
   const features = [
@@ -52,12 +52,15 @@ const Hero = () => {
                 Get Started Today
                 <ArrowRight className="ml-2 w-5 h-5" />
               </Link>
-              <Link 
-                to="/services"
-                className="btn-secondary inline-flex items-center justify-center"
+              <a 
+                href="https://wa.me/919740272509?text=Hello, I'm interested in your healthcare management services" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="btn-secondary inline-flex items-center justify-center bg-green-500 hover:bg-green-600 text-white border-green-500 hover:border-green-600"
               >
-                Explore Services
-              </Link>
+                <MessageCircle className="mr-2 w-5 h-5" />
+                WhatsApp Us
+              </a>
             </div>
           </div>
 

@@ -159,9 +159,8 @@ Copy `.env.example` to `.env` and configure:
 
 ## 📞 Contact Information
 
-- **Phone**: +91 9740272509
+- **Phone**: +91 80-41536750
 - **Email**: info@sohinomhealthcare.com
-- **WhatsApp**: +91 9740272509
 - **Address**: 1681 6th Main Road, RPC Layout, Vijayanagar, Bangalore 560104
 - **Website**: https://sohinomhealthcare.com
 

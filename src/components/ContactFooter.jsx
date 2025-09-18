@@ -7,7 +7,8 @@ import {
   Twitter, 
   Linkedin, 
   Instagram,
-  ArrowRight
+  ArrowRight,
+  MessageCircle
 } from 'lucide-react';
 import logo from '../assets/Sohin-removebg-preview.png';
 
@@ -57,7 +58,7 @@ const ContactFooter = () => {
                   </div>
                   <div>
                     <h4 className="font-semibold text-lg">Call Us</h4>
-                    <p className="text-blue-100">+91 80-41536750</p>
+                    <p className="text-blue-100">+91 9740272509</p>
                   </div>
                 </div>
 
@@ -68,6 +69,23 @@ const ContactFooter = () => {
                   <div>
                     <h4 className="font-semibold text-lg">Email Us</h4>
                     <p className="text-blue-100">info@sohinomhealthcare.com</p>
+                  </div>
+                </div>
+
+                <div className="flex items-start space-x-4 group">
+                  <div className="bg-white/20 backdrop-blur-sm p-3 rounded-lg group-hover:bg-white/30 transition-all duration-300">
+                    <MessageCircle className="w-6 h-6 text-white" />
+                  </div>
+                  <div>
+                    <h4 className="font-semibold text-lg">WhatsApp</h4>
+                    <a 
+                      href="https://wa.me/919740272509?text=Hello, I'm interested in your healthcare management services" 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="text-blue-100 hover:text-white transition-colors duration-300"
+                    >
+                      +91 9740272509
+                    </a>
                   </div>
                 </div>
 
@@ -95,6 +113,15 @@ const ContactFooter = () => {
                     Schedule Free Consultation
                     <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform duration-200" />
                   </button>
+                  <a 
+                    href="https://wa.me/919740272509?text=Hello, I would like to schedule a free consultation for healthcare management services" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="btn-secondary w-full group inline-flex items-center justify-center"
+                  >
+                    <MessageCircle className="mr-2 w-5 h-5" />
+                    Chat on WhatsApp
+                  </a>
                   <p className="text-sm text-gray-500">No commitment required • 30-minute call</p>
                 </div>
               </div>
@@ -166,7 +193,7 @@ const ContactFooter = () => {
             <div>
               <h4 className="font-semibold text-sm mb-3">Contact</h4>
               <div className="space-y-1.5 text-xs">
-                <p className="text-gray-400">+91 80-41536750</p>
+                <p className="text-gray-400">+91 9740272509</p>
                 <p className="text-gray-400">info@sohinomhealthcare.com</p>
                 <p className="text-gray-400">Mon-Fri: 9AM-6PM IST</p>
                 <p className="text-gray-400 text-xs">24/7 Support Available</p>

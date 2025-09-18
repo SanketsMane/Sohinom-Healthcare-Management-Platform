@@ -18,18 +18,18 @@ const WhatWeDo = () => {
   const [activeCard, setActiveCard] = useState(null);
   const [counters, setCounters] = useState({
     revenue: 0,
-    accuracy: 0,
+    satisfaction: 0,
     clients: 0
   });
 
   // Counter animation effect
   useEffect(() => {
-    const targets = { revenue: 25, accuracy: 99, clients: 500 };
+    const targets = { revenue: 25, satisfaction: 95, clients: 50 };
     const duration = 2000;
     const steps = 60;
     const increment = {
       revenue: targets.revenue / steps,
-      accuracy: targets.accuracy / steps,
+      satisfaction: targets.satisfaction / steps,
       clients: targets.clients / steps
     };
 
@@ -38,7 +38,7 @@ const WhatWeDo = () => {
       if (currentStep < steps) {
         setCounters(prev => ({
           revenue: Math.min(Math.floor(prev.revenue + increment.revenue), targets.revenue),
-          accuracy: Math.min(Math.floor(prev.accuracy + increment.accuracy), targets.accuracy),
+          satisfaction: Math.min(Math.floor(prev.satisfaction + increment.satisfaction), targets.satisfaction),
           clients: Math.min(Math.floor(prev.clients + increment.clients), targets.clients)
         }));
         currentStep++;
@@ -94,9 +94,9 @@ const WhatWeDo = () => {
     },
     {
       icon: Target,
-      title: "Claims Accuracy",
-      description: "Processing accuracy rate",
-      stat: `${counters.accuracy}%`,
+      title: "Customer Satisfaction",
+      description: "Client satisfaction rate",
+      stat: `${counters.satisfaction}%`,
       color: "text-blue-600",
       bgColor: "from-blue-100 to-blue-200"
     },
@@ -274,19 +274,19 @@ const WhatWeDo = () => {
             <h3 className="text-3xl font-bold">Our Service Coverage</h3>
           </div>
           <p className="text-xl text-blue-100 leading-relaxed max-w-4xl mx-auto mb-8">
-            We currently service healthcare providers across India with our Bangalore headquarters, 
-            offering comprehensive medical billing and revenue cycle management solutions 
-            tailored to Indian healthcare standards and international best practices.
+            We currently provide service for healthcare providers across USA and offering 
+            comprehensive medical billing and revenue cycle management solutions tailored to 
+            US healthcare standards and international best practices.
           </p>
           <div className="flex flex-wrap justify-center gap-4 mb-8">
             <span className="px-6 py-3 bg-white/20 backdrop-blur-sm rounded-full text-lg font-medium shadow-lg hover:bg-white/30 transition-colors duration-300">
-              India-wide Coverage
+              USA Coverage
             </span>
             <span className="px-6 py-3 bg-white/20 backdrop-blur-sm rounded-full text-lg font-medium shadow-lg hover:bg-white/30 transition-colors duration-300">
-              Bangalore HQ
+              US Healthcare Standards
             </span>
             <span className="px-6 py-3 bg-white/20 backdrop-blur-sm rounded-full text-lg font-medium shadow-lg hover:bg-white/30 transition-colors duration-300">
-              International Standards
+              HIPAA Compliant
             </span>
           </div>
           <button className="bg-white text-blue-600 px-8 py-4 rounded-xl font-semibold hover:bg-gray-100 transition-all duration-300 transform hover:scale-105 shadow-lg">

@@ -164,6 +164,8 @@ location / {
 - Technical issues: Development team
 - Content updates: Marketing team
 - Business inquiries: info@sohinomhealthcare.com
+- Phone: +91 9740272509
+- WhatsApp: +91 9740272509
 
 ---
 
